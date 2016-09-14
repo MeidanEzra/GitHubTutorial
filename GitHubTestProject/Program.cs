@@ -20,7 +20,18 @@ namespace GitHubTestProject
         /// <returns></returns>
         public static bool IsPrime(int n)
         {
-            // TODO: Complete fhe funtion
+            if (n%3=0)
+            {
+                return false;
+            }
+            if (n%5=0)
+            {
+                return false;
+            }
+            if (n%7=0)
+            {
+                return false;
+            }
             return n % 2 != 0;
         }
 
@@ -30,7 +41,7 @@ namespace GitHubTestProject
         /// <param name="a">An integer array</param>
         public static void Sort(int[] a)
         {
-            // TODO: Complete fhe funtion
+            Array.Sort(a);
         }
 
         /// <summary>
@@ -42,7 +53,8 @@ namespace GitHubTestProject
         /// <param name="a">The sequence length</param>
         /// <returns>The number of sequences</returns>
         public static int CountVectors(int a)
-        {
+        { 
+           
             if (a == 1)
                 return 2;
             if (a == 2)
